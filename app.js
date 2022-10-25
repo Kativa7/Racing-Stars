@@ -10,8 +10,8 @@ const countdownTillBD = (dob) => {
   const daysLeft = Math.floor(timeLeft / (1000 * 60 * 60 * 24)) + 1;
   const daysGone = Math.floor(timePassed / (1000 * 60 * 60 * 24));
   console.log(`Days left: ${daysLeft} Days passed: ${daysGone}`);
-  document.getElementById("days-gone").innerHTML = daysGone;
-  document.getElementById("days-left").innerHTML = daysLeft;
+  document.getElementById("days-gone").textContent = daysGone;
+  document.getElementById("days-left").textContent = daysLeft;
   if (daysLeft === 0) {
     document.getElementById("messege").textContent = "Happy Birthday";
   }
